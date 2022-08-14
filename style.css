@@ -1,3 +1,6 @@
+/* BOOTSTRAP ICONS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
 
@@ -6,11 +9,10 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  
 }
 
 html{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
     margin: 0;
   padding: 0;
@@ -29,15 +31,15 @@ body {
 
 
 header {
-height: 100vh;
-  width: 100vw;
-text-align: center;
+min-height: 100vh;
+width: 100vw;
+/* text-align: center; */
 background-color: black;
 color: white;  
 font-family: 'Montserrat', sans-serif;  
 }
 
-img {
+img.headshot {
   width: 350px;
 }
 
@@ -46,17 +48,47 @@ img {
 .display-1 {
   text-transform: lowercase;
   font-size: 6.5rem;
-  margin-bottom: .5rem;
+ 
 }
 
 .display-3 {
 /*   font-size: 1.3rem; */
   font-size: 1.75rem;
-  margin-bottom: 4rem;
+
   font-weight: 400;
 }
 
 
+
+
+/*──────────────────
+    header icons
+──────────────────*/
+
+.header-icons{
+	padding: 10px;
+	display: flex;
+	position: center;
+  align-items: center;
+	justify-content:center;
+}
+
+.header-icons a {
+    margin: 10px;
+    font-size: 2rem;
+    text-align:center;
+    display: inline-block;
+	color: var(--main-fonts-color);
+}
+
+.header-icons a i{
+	cursor: pointer;
+}
+
+.header-icons  a:hover {
+	color: var(--main-decor-color);
+	text-shadow: 0 0 50px var(--main-decor-color);
+}
 
 /* NEON TEXT */
 /* NEON TEXT TUTORIAL: https://css-tricks.com/how-to-create-neon-text-with-css/ */
@@ -97,7 +129,7 @@ a:hover {
   color: #d6292b;
 }
 
-a::before {
+a.animated::before {
   content: "";
   position: absolute;
   display: block;
@@ -110,7 +142,7 @@ a::before {
   transition: transform 0.3s ease;
 }
 
-a:hover::before {
+a.animated:hover::before {
   transform: scaleX(1);
 }
 
@@ -173,5 +205,4 @@ footer {
 footer p {
    font-family: 'Montserrat', sans-serif;
   /* font-weight: 400; */
-
 }
