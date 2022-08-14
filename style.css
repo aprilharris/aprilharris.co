@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
 
 *{
-  width: 100%;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -14,8 +13,7 @@
 html{
   font-size: 18px;
   line-height: 1.5;
-    margin: 0;
-  padding: 0;
+  
  
 }
 
@@ -26,17 +24,14 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
-  width: 100%;  
+  /* width: 100%;   */
 }
 
 
 header {
 min-height: 100vh;
-width: 100vw;
-/* text-align: center; */
 background-color: black;
-color: white;  
-font-family: 'Montserrat', sans-serif;  
+color: white;    
 }
 
 img.headshot {
@@ -58,65 +53,8 @@ img.headshot {
   font-weight: 400;
 }
 
-
-
-
-/*──────────────────
-    header icons
-──────────────────*/
-
-.header-icons{
-	padding: 10px;
-	display: flex;
-	position: center;
-  align-items: center;
-	justify-content:center;
-}
-
-.header-icons a {
-    margin: 10px;
-    font-size: 2rem;
-    text-align:center;
-    display: inline-block;
-	color: var(--main-fonts-color);
-}
-
-.header-icons a i{
-	cursor: pointer;
-}
-
-.header-icons  a:hover {
-	color: var(--main-decor-color);
-	text-shadow: 0 0 50px var(--main-decor-color);
-}
-
-/* NEON TEXT */
-/* NEON TEXT TUTORIAL: https://css-tricks.com/how-to-create-neon-text-with-css/ */
-/* .neonText {
-color: white;
-text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #d6292b,
-      0 0 82px #d6292b,
-      0 0 92px #d6292b;
-    
-} */
-
-
- a.button-outline {
-  font-size: 1.2rem;
-  outline: #d6292b solid 1px;
-  padding: 1rem 1rem;
-}
-
-/* LINK ANIMATION */
-/* LINK ANIMATION TUTORIAL: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
-
-
 a:link {
-  position: relative;
+  /* position: relative; */
   color: #d6292b;
   text-decoration: none;
 }
@@ -129,22 +67,7 @@ a:hover {
   color: #d6292b;
 }
 
-a.animated::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #d6292b;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
 
-a.animated:hover::before {
-  transform: scaleX(1);
-}
 
 ul {
   padding-left: 2rem;
@@ -192,17 +115,10 @@ color: gray;
   font-weight: 500;
 }
 
+footer {
+  background-color: black;
+}
 /* .container {
   padding: 2.25rem;
            } */
 
-footer {
-  padding-bottom: 0.5rem;
-  color: black;
-  text-align: center;
-}
-
-footer p {
-   font-family: 'Montserrat', sans-serif;
-  /* font-weight: 400; */
-}
