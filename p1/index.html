@@ -13,13 +13,30 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
 
 
-html {
-font-size: 18pt;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-body {
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
   height: 100%;
-  width: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+}
+
+.display-1 {
+
+  font-size: 5rem;
+}
+
+main {
+  min-height: 75vh;
 }
 
 [class^="display"] {
@@ -34,10 +51,10 @@ body {
   
 </head>
 <body>
-  <header>
-    <div class="container text-center">
-    <h1 class="display-2 mt-5 pt-5 mb-3">Dad Joke Generator</h1>
-          <p class="text-secondary">Generate a <a href='https://en.wikipedia.org/wiki/Dad_joke' target="_blank" rel="nofollow noreferrer">dad joke</a> on demand.<br/>Click the button below to get started.</p>
+  <header class="d-flex">
+    <div class="container text-center align-items-center">
+    <h1 class="display-1 mt-5 pt-5 mb-3">Dad Joke Generator</h1>
+          <p class="text-secondary lead">Generate a <a href='https://en.wikipedia.org/wiki/Dad_joke' target="_blank" rel="nofollow noreferrer">dad joke</a> on demand.<br/>Click the button below to get started.</p>
         </div>
   </header>
   <main>
@@ -45,14 +62,16 @@ body {
 
 <!--           JOKE CONTAINER -->
       <div id="jokeContainer" class="w-75 mx-auto">
-      <p id="joke" class="joke lead p-4">
+      <p id="joke" class="mt-5 joke fs-1 p-4">
         [insert joke here]
       </p> 
       </div>
-      <button id="jokeBtn" class="btn btn-dark m-1">Get Another Joke</button>
+      <button id="jokeBtn" class="btn btn-lg btn-dark m-1">Get Another Joke</button>
 </div>
   </main>
-
+<footer class="fixed-bottom py-3 bg-dark text-center text-white">
+<div class="inline">built with 💪🏾 by <a href="https://aprilharris.co" target="_blank" rel="noopenner noreferrer">aprilharris.co</a></div>
+</footer>
 <!--   CUSTOM JS -->
   <script src="script.js"></script>
 <!--   BOOTSTRAP JS -->
