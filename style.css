@@ -34,7 +34,9 @@ img.headshot {
   width: 350px;
 }
 
-
+.social-icon {
+  margin: .5rem;
+}
 /* targets any <h1> nested inside of <header> */
 .display-1 {
   text-transform: lowercase;
